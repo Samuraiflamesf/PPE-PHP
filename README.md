@@ -12,7 +12,7 @@
 
 </div>
 
-# 📄 Sistema de Controle/Projeto Primeiro Emprego em PHP
+# 📄 Sistema de Controle/Projeto Primeiro Emprego
 
 ![status-em-andamento](https://user-images.githubusercontent.com/62897976/185768581-1d051a52-2e60-4378-b31d-39028cbfb5c8.svg)
 
