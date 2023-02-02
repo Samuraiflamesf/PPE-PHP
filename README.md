@@ -37,11 +37,13 @@ Nulla ipsum est do reprehenderit anim voluptate deserunt quis veniam quis velit 
 - [ ] Estruturação das Paginas
   - [ ] Login/Cadastro
     - [ ] Pensando no Back-end
-  - [ ] Help Desk (Projeto fechado)
-  - [ ] Sistema de Emissão de senhas
-   - [ ] Implementação com impressora
+  - [ ] Sistema de Gestão de formulário
+  - [ ] Listagem dos Cards
   - [ ] Sistema de Cadastro
     - [ ] CRUD para cadastro dos pacientes 
+  - [ ] Sistema de Emissão de senhas
+   - [ ] Implementação com impressora
+
 - [ ] Resolvendo Bugs
 - [ ] Projeto Finalizado
 
