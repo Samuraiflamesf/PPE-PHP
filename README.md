@@ -41,8 +41,7 @@ Nulla ipsum est do reprehenderit anim voluptate deserunt quis veniam quis velit 
   - [ ] Listagem dos Cards
   - [ ] Sistema de Cadastro
     - [ ] CRUD para cadastro dos pacientes 
-  - [ ] Sistema de Emissão de senhas
-   - [ ] Implementação com impressora
+  - [ ] Sistema de Aviso de Aniversario
 
 - [ ] Resolvendo Bugs
 - [ ] Projeto Finalizado
