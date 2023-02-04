@@ -39,8 +39,7 @@ if ($total_reg2 == 0) {
                         </h5>
                     </div>
 
-                    <form class="row g-3 needs-validation mb-3" novalidate method="post"
-                        action="../../int/autenticar.php">
+                    <form class="row g-3 needs-validation mb-3" novalidate method="post" action="../int/autenticar.php">
 
                         <div class="col-12">
                             <div class="form-floating">
