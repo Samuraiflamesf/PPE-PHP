@@ -30,9 +30,7 @@ if (@$_GET['pag'] == "") {
     <link rel="shortcut icon" href="FlameBox.ico">
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!-- Vendor -->
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -49,80 +47,33 @@ if (@$_GET['pag'] == "") {
 
 <body>
     <div class="container">
+        <!--
+            Puxando o cabeçalho
+        -->
         <?php
         require_once('../view/layout/header/header_1.php');
         ?>
     </div>
 
     <div class="container-fluid">
+        <!--
+            Puxando a pagina é colocando no container
+        -->
         <?php
         require_once('../view/pages/' . $pag . '.php');
-
         ?>
     </div>
-
+        <!--
+            Puxando a paginação do site
+        -->
     <?php
-    if (@$_GET['pag'] == "form") {
-        //Pag 2
+    require_once('../int/paginacaoHome.php');
     ?>
-    <script>
-    //Outros
-
-    document.querySelector('#menu1').classList.remove('link-secondary')
-    document.querySelector('#menu2').classList.remove('link-dark')
-    document.querySelector('#menu3').classList.remove('link-secondary')
-    document.querySelector('#menu4').classList.remove('link-secondary')
-    //Selecionado
-    document.querySelector('#menu1').classList.add('link-dark')
-    document.querySelector('#menu2').classList.add('link-secondary')
-    document.querySelector('#menu3').classList.add('link-dark')
-    document.querySelector('#menu4').classList.add('link-dark')
-
-    console.log('feito');
-    </script>
-    <?php
-    } ?>
-    <?php
-    if (@$_GET['pag'] == "ramais") {
-        //Pag 3
-    ?>
-    <script>
-    //Outros
-    document.querySelector('#menu1').classList.remove('link-secondary')
-    document.querySelector('#menu2').classList.remove('link-secondary')
-    document.querySelector('#menu3').classList.remove('link-dark')
-    document.querySelector('#menu4').classList.remove('link-secondary')
-    //Selecionado
-    document.querySelector('#menu1').classList.add('link-dark')
-    document.querySelector('#menu2').classList.add('link-dark')
-    document.querySelector('#menu3').classList.add('link-secondary')
-    document.querySelector('#menu4').classList.add('link-dark')
-
-    console.log('feito');
-    </script>
-    <?php
-    } ?>
-    <?php
-    if (@$_GET['pag'] == "login") {
-        //Pag 4
-    ?>
-    <script>
-    //Outros
-    document.querySelector('#menu1').classList.remove('link-secondary')
-    document.querySelector('#menu2').classList.remove('link-secondary')
-    document.querySelector('#menu3').classList.remove('link-secondary')
-    //Selecionado
-    document.querySelector('#menu1').classList.add('link-dark')
-    document.querySelector('#menu2').classList.add('link-dark')
-    document.querySelector('#menu3').classList.add('link-dark')
-
-    console.log('feito');
-    </script>
-    <?php
-    } ?>
-
 
     <div class="container">
+        <!--
+            Puxando Rodapé do site
+        -->
         <?php
         require_once('../view/layout/footer/footer.php');
         ?>

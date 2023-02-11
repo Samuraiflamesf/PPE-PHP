@@ -2,7 +2,6 @@
 $nome_pag = 'Formulário';
 ?>
 <main id="main" class="main">
-
     <div class="pagetitle">
         <h1><?php echo $nome_pag ?></h1>
         <nav>
@@ -18,7 +17,6 @@ $nome_pag = 'Formulário';
             </ol>
         </nav>
     </div>
-
     <section class="section">
         <div class="row">
             <div class="col-lg-6">

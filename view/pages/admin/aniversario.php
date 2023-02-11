@@ -2,7 +2,6 @@
     $nome_pag = 'Lista de Aniversario';
     ?>
  <main id="main" class="main">
-
      <div class="pagetitle">
          <h1><?php echo $nome_pag ?></h1>
          <nav>
@@ -20,29 +19,21 @@
      </div>
 
      <section class="section">
-         <div class="row">
-             <div class="col-lg-6">
-
-                 <div class="card">
-                     <div class="card-body">
-                         <h5 class="card-title">Example Card</h5>
-                         <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
-                     </div>
+         <div class="col">
+             <div class="card">
+                 <div class="card-body pb-0">
+                     <h5 class="card-title pb-0">
+                         Formulário de Cadastro
+                     </h5>
+                     <!-- Formulário de Cadastro -->
+                     <?php require_once('./aniversario/form.php') ?>
                  </div>
-
-             </div>
-
-             <div class="col-lg-6">
-
-                 <div class="card">
-                     <div class="card-body">
-                         <h5 class="card-title">Example Card</h5>
-                         <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
-                     </div>
-                 </div>
-
              </div>
          </div>
      </section>
+     
+     <?php 
+     require_once('./aniversario/listar.php');
+     ?>
 
  </main>

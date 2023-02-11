@@ -1,49 +1,24 @@
-<div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5">
-        <h2 class="display-6 fw-bold">
-            Bom dia ☀️, horario
-        </h2>
-        <p class="col fs-4">
-            Sistema Infranet do cimeb local para frases motivacionais
-        </p>
-        <button class="btn btn-warning btn-lg" type="button">
-            Formulários
-        </button>
-        <button class="btn btn-dark btn-lg" type="button">
-            Ramais
-        </button>
+<div class="p-5 mb-1 bg-light rounded-3">
+    <div class="container pt-3">
+        <?php
+        require_once('display/timer.php');
+        ?>
     </div>
 </div>
-<div class="row align-items-md-stretch">
-    <div class="col-md-6">
-        <div class="h-100 p-5 text-white bg-dark rounded-3">
-            <h2 class="text-center">Aniversariantes do Mês</h2>
 
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Bernardo Nogueira da Silva
-                    <span class="badge bg-primary rounded-pill">
-                        21/07
-                    </span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Dayane Ramos
-                    <span class="badge bg-primary rounded-pill">
-                        08/02
-                    </span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Nome
-                    <span class="badge bg-primary rounded-pill">
-                        Data
-                    </span>
-                </li>
-            </ul>
+<div class="row container m-auto">
+    <div class="col-md-6 p-0">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+            <?php
+            require_once('display/aniversario.php');
+            ?>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 p-0  ">
         <div class="h-100 p-5 bg-light border rounded-3">
-            <h2>Foto do Aniversariantes + Mensagem</h2>
+            <?php
+            require_once('display/avisos.php');
+            ?>
         </div>
     </div>
 </div>
