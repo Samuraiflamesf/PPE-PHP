@@ -30,19 +30,24 @@ Nulla ipsum est do reprehenderit anim voluptate deserunt quis veniam quis velit 
 
 ### 🎯 Implementações/Features
 
-- [ ] Roadmap 
-- [ ] Criando Desing no FIGMA
-- [ ] Estilos Globais do Projeto
-
-- [ ] Estruturação das Paginas
-  - [ ] Login/Cadastro
-    - [ ] Pensando no Back-end
-  - [ ] Sistema de Gestão de formulário
+- [x] Roadmap 30/01
+- [x] Criando Desing no FIGMA 30/01
+- [x] Estilos Globais do Projeto 30/01
+- [x] Estruturação das Paginas 02/02
+  - [x] Login/Cadastro
+    - [x] Pensando no Back-end
+  - [x] Sistema de Gestão de Ramais 11/02
+	  - [x] Fazendo formulario CRUD
+	  - [x] Mostrando dados na area publica
+  - [x]  Sistema de Gestão de Aniversario 12/02
+	  - [x] Fazendo formulario CRUD
+	  - [x] Mostrando dados na area publica
+	  - [x] Criando interação para o aniversariante do mês na area publica
+  - [ ] Sistema de Gestão de Avisos
+  - [ ] Sistema de Gestão de Formulário
   - [ ] Listagem dos Cards
-  - [ ] Sistema de Cadastro
+  - [ ] Sistema de Cadastro?
     - [ ] CRUD para cadastro dos pacientes 
-  - [ ] Sistema de Aviso de Aniversario
-
 - [ ] Resolvendo Bugs
 - [ ] Projeto Finalizado
 
