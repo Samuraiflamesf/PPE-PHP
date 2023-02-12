@@ -22,9 +22,6 @@ $registros = $stmt->fetchAll();
             <thead>
                 <tr>
                     <th scope="col">
-                        ID
-                    </th>
-                    <th scope="col">
                         Nome
                     </th>
                     <th scope="col">
@@ -39,9 +36,7 @@ $registros = $stmt->fetchAll();
             <tbody>
                 <?php foreach ($registros as $registro) { ?>
                     <tr>
-                        <th scope="row">
-                            <?php echo $registro['id']; ?>
-                        </th>
+
                         <td>
                             <?php echo $registro['nome']; ?>
                         </td>

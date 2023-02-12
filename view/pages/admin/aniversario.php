@@ -31,9 +31,9 @@
              </div>
          </div>
      </section>
-     
-     <?php 
-     require_once('./aniversario/listar.php');
-     ?>
+
+     <?php
+        require_once('./aniversario/listar.php');
+        ?>
 
  </main>

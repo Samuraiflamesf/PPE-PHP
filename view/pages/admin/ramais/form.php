@@ -11,7 +11,7 @@
         <label for="telefone" class="p-2 px-0">
             Telefone:
         </label>
-        <input type="text" class="form-control" name="telefone" id="telefone" pattern="\d{4}\d{4}">
+        <input type="text" class="form-control" name="telefone" id="telefone" pattern="\d{4}\d{4}" placeholder="31171645">
 
     </div>
     <!-- Botão de Envio -->

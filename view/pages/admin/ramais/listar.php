@@ -15,15 +15,14 @@ $registros = $stmt->fetchAll();
 <!-- Lista de Aniversariantes -->
 <div class="card">
     <div class="card-body">
-        <h5 class="card-title">
-            Lista de Ramais
+        <h5 class="card-title ">
+
+                Lista de Ramais
+            
         </h5>
-        <table class="table table-hover">
+        <table class="table table-hover" id="myTable">
             <thead>
                 <tr>
-                    <th scope="col">
-                        ID
-                    </th>
                     <th scope="col">
                         Setor
                     </th>
@@ -39,14 +38,17 @@ $registros = $stmt->fetchAll();
             <tbody>
                 <?php foreach ($registros as $registro) { ?>
                     <tr>
-                        <th scope="row">
-                            <?php echo $registro['id']; ?>
-                        </th>
                         <td>
                             <?php echo $registro['setor']; ?>
                         </td>
                         <td>
-                            <?php echo $registro['telefone']; ?>
+                            <?php
+                            $numero = $registro['telefone'];
+                            $tamanho = strlen($numero);
+                            $numero1 = substr($numero, 0, 4);
+                            $numero2 = substr($numero, $tamanho - 4);
+                            echo $numero1 . '-' . $numero2;
+                            ?>
                         </td>
                         <td>
                             <a href="ramais/atualizar.php?id=<?php echo $registro['id']; ?>" class="btn btn-warning">
