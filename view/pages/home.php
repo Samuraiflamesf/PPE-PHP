@@ -17,7 +17,7 @@
     <div class="col-md-6 p-0  ">
         <div class="h-100 p-5 bg-light border rounded-3">
             <?php
-            require_once('display/avisos.php');
+            require_once('display/button.php');
             ?>
         </div>
     </div>
