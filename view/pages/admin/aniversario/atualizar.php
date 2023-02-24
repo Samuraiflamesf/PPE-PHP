@@ -1,3 +1,12 @@
+<head>
+    <!-- Vendor -->
+    <link href="../../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Styles Custom -->
+    <link href="../../../../assets/css/style.css" rel="stylesheet">
+</head>
+
+
 <?php
 // Conexão com o Banco de Dados
 require_once("../../../../int/conexao.php");
@@ -41,17 +50,21 @@ if (!$registro) {
 ?>
 
 <!-- Formulário de Atualização -->
+<div class="card col-5 m-auto mt-5 p-5">
+    <div class="card-body">
 
-<form action="atualizar.php" method="post">
-    <!-- Campo ID (escondido) -->
-    <input type="hidden" id="id" name="id" value="<?php echo $_GET['id']; ?>">
-    <div class="form-group">
-        <label for="nome">Nome:</label>
-        <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $registro['nome']; ?>">
+        <form action="atualizar.php" method="post" class="">
+            <!-- Campo ID (escondido) -->
+            <input type="hidden" id="id" name="id" value="<?php echo $_GET['id']; ?>">
+            <div class="form-group">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" value="<?php echo $registro['nome']; ?>">
+            </div>
+            <div class="form-group">
+                <label for="data_nascimento" class="form-label">Data de Nascimento:</label>
+                <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" value="<?php echo $registro['data_nascimento']; ?>">
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Atualizar</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label for="data_nascimento">Data de Nascimento:</label>
-        <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" value="<?php echo $registro['data_nascimento']; ?>">
-    </div>
-    <button type="submit" class="btn btn-primary">Atualizar</button>
-</form>
+</div>

@@ -3,7 +3,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
         <li class="nav-item"> <!-- HOME -->
-            <a class="nav-link collapsed" href="index.php?pag=<?php echo $menu1 ?>">
+            <a class="nav-link collapsed disabled" href="index.php?pag=<?php echo $menu1 ?>">
                 <i class="bi bi-grid"></i>
                 <span>Home</span>
             </a>
@@ -27,7 +27,7 @@
             </a>
         </li>
         <li class="nav-item"><!-- Ramais -->
-            <a class="nav-link collapsed" href="index.php?pag=<?php echo $menu5 ?>">
+            <a class="nav-link collapsed disabled" href="index.php?pag=<?php echo $menu5 ?>">
                 <i class="bi bi-journal-text"></i>
                 <span>Avisos</span>
             </a>
