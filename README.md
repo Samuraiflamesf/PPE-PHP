@@ -43,12 +43,12 @@ Nulla ipsum est do reprehenderit anim voluptate deserunt quis veniam quis velit 
 	  - [x] Fazendo formulario CRUD
 	  - [x] Mostrando dados na area publica
 	  - [x] Criando interação para o aniversariante do mês na area publica
-  - [ ] Butões de sites
-  - [ ] Sistema de Gestão de Formulário
-  - [ ] Listagem dos Cards
+  - [x] Butões de sites
+  - [x] Sistema de Gestão de Formulário
+  - [x] Listagem dos Cards
   - [ ] Sistema de Cadastro?
     - [ ] CRUD para cadastro dos pacientes 
-- [ ] Relatorio dos aniversario 
+- [ ] Relatório dos aniversario 
 - [ ] Resolvendo Bugs
 - [ ] Projeto Finalizado
 
