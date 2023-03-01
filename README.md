@@ -46,8 +46,13 @@ Nulla ipsum est do reprehenderit anim voluptate deserunt quis veniam quis velit 
   - [x] Butões de sites
   - [x] Sistema de Gestão de Formulário
   - [x] Listagem dos Cards
-  - [ ] Sistema de Cadastro?
-    - [ ] CRUD para cadastro dos pacientes 
+- [ ] Composer entrou na minha vida
+  - [ ] Reformulando projeto
+  - [ ] COMPOSER ENTRA NA MINHA VIDA _Completo_
+- [ ] Readaptar Cadastro de Aniversario para profissional
+
+- [ ] Sistema de Cadastro?
+  - [ ] CRUD para cadastro dos pacientes 
 - [ ] Relatório dos aniversario 
 - [ ] Resolvendo Bugs
 - [ ] Projeto Finalizado
