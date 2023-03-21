@@ -18,7 +18,8 @@ $menu1 = 'index';
 $menu2 = 'aniversario';
 $menu3 = 'form';
 $menu4 = 'ramais';
-$menu5 = 'avisos';
+$menu5 = 'pasta';
+$menu6 = 'links';
 
 //Recuperar e direcionar pagina 
 if (@$_GET['pag'] == "") {

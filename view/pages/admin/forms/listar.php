@@ -1,85 +1,68 @@
 <?php
 // Conexão com o Banco de Dados
 require_once('../../../int/conexao.php');
+// Preparação da Busca
+$sql = "SELECT nome_arquivo, selecione_pasta, id FROM pdf_files ORDER BY id";
+$stmt = $pdo->prepare($sql);
 
-// Processar atualização ou exclusão
-if (isset($_POST["action"]) && isset($_POST["pdf_id"])) {
-    $pdfId = $_POST["pdf_id"];
-    if ($_POST["action"] == "update") {
-        $newName = $_POST["new_name"];
-        $sql = "UPDATE pdf_files SET new_name='$newName' WHERE id=$pdfId";
-        if ($conn->query($sql) === TRUE) {
-            echo "<div class='alert alert-success mt-2' role='alert'>";
-            echo "Nome do arquivo atualizado com sucesso.";
-            echo "</div>";
-        } else {
-            echo "<div class='alert alert-danger mt-2' role='alert'>";
-            echo "Erro ao atualizar o nome do arquivo: " . $conn->error;
-            echo "</div>";
-        }
-    } else if ($_POST["action"] == "delete") {
-        $sql = "DELETE FROM pdf_files WHERE id=$pdfId";
-        if ($conn->query($sql) === TRUE) {
-            echo "<div class='alert alert-success mt-2' role='alert'>";
-            echo "Arquivo excluído com sucesso.";
-            echo "</div>";
-        } else {
-            echo "<div class='alert alert-danger mt-2' role='alert'>";
-            echo "Erro ao excluir o arquivo: " . $conn->error;
-            echo "</div>";
-        }
-    }
-}
+// Execução da Busca
+$stmt->execute();
 
-// Consultar registros na tabela "pdf_files"
-$sql = "SELECT * FROM pdf_files";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // Exibir a lista de arquivos PDF encontrados em uma tabela
-    echo "<div class='card'><div class='card-body'><h5 class='card-title'>Lista de Arquivos</h5><table class='table table-hover'>";
-    echo "<th scope='col'>Nome do arquivo</th><th scope='col'>Ação</th></tr>";
-    while ($row = $result->fetch_assoc()) {
-        $pdfContent = base64_encode($row["pdf_content"]);
-        $pdfSrc = "data:application/pdf;base64," . $pdfContent;
-        echo "<tr>";
-        echo "<td class='row'>";
-        echo "<form method=\"POST\" class='row'>";
-        echo "<input type=\"hidden\" name=\"pdf_id\" value=\"" . $row["id"] . "\" class='form-control'>";
-        echo "<input type=\"hidden\" name=\"action\" value=\"update\" >";
-        echo "<input type=\"text\" name=\"new_name\" value=\"" . $row["new_name"] . "\"class='form-control col'>";
-        echo "<input type=\"submit\" value=\"Atualizar\" class='btn btn-warning p-1 m-1 col-2'>";
-        echo "</form>";
-        echo "</td>";
-        echo "<td >";
-        echo "<form method=\"POST\">";
-        echo "<input type=\"hidden\" name=\"pdf_id\" value=\"" . $row["id"] . "\" >";
-        echo "<input type=\"hidden\" name=\"action\" value=\"delete\" >";
-        echo "<input type=\"submit\" value=\"Excluir\" class='btn btn-warning p-1 m-1'>";
-        echo "</form>";
-        echo "</td>";
-        echo "</tr>";
-    }
-    echo "</table>";
-} else {
-    echo "<div class='alert alert-warning mt-2' role='alert'>";
-    echo "Nenhum arquivo PDF encontrado no banco de dados.";
-    echo "</div>";
-}
-
-$conn->close();
+// Resultado
+$registros = $stmt->fetchAll();
 ?>
+<!-- Lista de Aniversariantes -->
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">
+            Lista de Arquivos
+        </h5>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Nome dos Arquivos
+                    </th>
+                    <th scope="col">
+                        Nome da pasta
+                    </th>
+                    <th scope="col">
+                        Ações
+                    </th>
 
-<!-- Lista de Arquivos 
-
+                </tr>
+            </thead>
+            <tbody>
                 <?php foreach ($registros as $registro) { ?>
                     <tr>
 
                         <td>
-                            <?php echo $registro['new_name']; ?>
+                            <?php echo $registro['nome_arquivo']; ?>
                         </td>
                         <td>
-                            <?php echo $registro['date_uploaded']; ?>
+                            <?php
+                            $selecione_pasta = $registro['selecione_pasta'];
+                            // Consultar a tabela para obter o nome correspondente
+                            $sql = "SELECT nome FROM pasta WHERE id = '$selecione_pasta'";
+                            $result = mysqli_query($conn, $sql);
+
+                            // Verificar se houve resultado
+                            if (mysqli_num_rows($result) > 0) {
+                                // Obter o nome correspondente
+                                $result = mysqli_fetch_assoc($result);
+                                $nome = $result['nome'];
+
+                                // Exibir o nome correspondente
+                                echo $nome;
+                            } else {
+                                // Se não houver resultado, exibir uma mensagem de erro
+                                echo "-";
+                            }
+
+                            // Fecha a conexão com o banco de dados
+
+                            ?>
+
                         </td>
                         <td>
                             <a href="forms/atualizar.php?id=<?php echo $registro['id']; ?>" class="btn btn-warning">
@@ -91,10 +74,12 @@ $conn->close();
                             </a>
                         </td>
                     </tr>
-                <?php } ?>
+                <?php }
+                $conn->close();?>
+                
             </tbody>
 
         </table>
 
     </div>
-</div>-->
+</div>

@@ -2,7 +2,7 @@
     <div class="footer-copyright font-weight-bold text-center text-primary">
         &copy; <script>
             document.write(new Date().getFullYear());
-        </script> - Todos os direitos reservados (>.<) Feito com 🧡 </div>
+        </script> - Todos os direitos reservados (>.<) Feito com 🧡 por Bernardo🧡 </div>
 
     </div>
 </footer>

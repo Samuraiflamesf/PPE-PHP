@@ -18,15 +18,31 @@ if (isset($mes)) {
     // Execução da Consulta
     $stmt->execute();
 
-    // Resultado da Consulta
+    echo "<div class='col'>";
     echo "<ul class='list-group'>";
+    // Define um contador para controlar quantos valores já foram exibidos
+    $count = 0;
+    $numResultados = $stmt->rowCount();
+    $metade = $numResultados/2;
     while ($aniversariante = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        // Incrementa o contador
+        $count++;
+        // Resultado da Consulta
+        
         echo "<li class='list-group-item d-flex justify-content-between align-items-center'>";
         echo  $aniversariante['nome'];
         echo "<h5 class='mt-1 mb-1 text-end'>";
         echo "<span class='badge bg-primary '>" . date("d/m", strtotime($aniversariante['data_nascimento']));
         echo "</span></h5></li>";
+        // Se o contador for divisível por 4, imprime uma quebra de linha
+        if ($count == $metade) {
+            echo "</div>";
+            echo "<div class='col'>";
+            echo "<ul class='list-group'>";
+        }
     }
     echo "</ul>";
+    echo "</div>";
 }
+
 ?>
