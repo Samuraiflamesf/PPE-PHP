@@ -23,7 +23,7 @@
         <li class="nav-item"> <!-- Formulários -->
             <a class="nav-link collapsed" href="index.php?pag=<?php echo $menu3 ?>">
                 <i class="bi bi-card-list"></i>
-                <span>Formulários</span>
+                <span>Documentos</span>
             </a>
         </li>
         <li class="nav-item"><!-- Avisos -->

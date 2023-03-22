@@ -1,7 +1,3 @@
-<?php
-header("Content-type: text/html; charset=utf-8");
-?>
-
 <form action="forms/processa_upload.php" method="post" enctype="multipart/form-data" accept-charset="utf-8">
     <div class="alert m-0 alert-primary text-center">
         <i class="fa-solid fa-circle-exclamation mx-2 "></i>

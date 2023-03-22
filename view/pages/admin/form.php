@@ -1,5 +1,5 @@
 <?php
-$nome_pag = 'Formulário';
+$nome_pag = 'Documentos de Gestão da Qualidade';
 ?>
 <main id="main" class="main">
     <div class="pagetitle">

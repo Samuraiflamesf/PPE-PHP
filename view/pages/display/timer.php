@@ -34,11 +34,11 @@
     ?>
 
 </p>
-<div class="row m-auto">
-    <a href="index.php?pag=<?php echo $menu2 ?>" class="btn btn-warning btn-lg col-5 col-lg-2 col-md-3 col-sm-4 justify-content-sm-center" type="button">
-        Formulários
+<div class="row m-auto w-100">
+    <a href="index.php?pag=form" class="btn btn-warning btn-lg col-5 col-lg-4 col-md-3 col-sm-4 justify-content-sm-center" type="button">
+        Documentos
     </a>
-    <a href="index.php?pag=<?php echo $menu3 ?>" class="btn btn-dark btn-lg mx-2 col-5 col-md-2 col-sm-4 justify-content-sm-center" type="button">
+    <a href="index.php?pag=ramais" class="btn btn-dark btn-lg col-5 col-lg-4 col-md-3 col-sm-4 mx-2 justify-content-sm-center" type="button">
         Ramais
     </a>
 </div>

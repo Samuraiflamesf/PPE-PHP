@@ -63,7 +63,7 @@ if (@$_GET['pag'] == "") {
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container">
         <?php
         require_once('../../layout/header/header_2.php');
         ?>
@@ -75,7 +75,7 @@ if (@$_GET['pag'] == "") {
         ?>
     </div>
 
-    <div class="container">
+    <div class="container pt-4">
         <?php
         require_once('../../layout/footer/footer.php');
         ?>

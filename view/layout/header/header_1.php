@@ -9,7 +9,7 @@
                 Inicio
             </a></li>
         <li><a href="index.php?pag=<?php echo $menu2 ?>" class="nav-link px-2 link-dark" id="menu2">
-                Formulário
+                Documentos
             </a></li>
         <li><a href="index.php?pag=<?php echo $menu3 ?>" class="nav-link px-2 link-dark" id="menu3">
                 Ramais
