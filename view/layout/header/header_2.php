@@ -48,3 +48,6 @@
     require_once('sidebar.php');
     ?>
 </div>
+<?php
+header('Content-Type: text/html; charset=utf-8');
+?>

@@ -1,6 +1,6 @@
 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <a href="/" class=" text-decoration-none col-4">
-        <img src="../assets/img/Logo_Cimeb.png" alt="Image" height="50">
+        <img src="https://i.postimg.cc/3r1K8zkp/Logo-Cimeb.png" alt="Image" height="50">
     </a>
 
 
@@ -19,7 +19,7 @@
 
     <div class="col-md-4 text-end">
         <a href="/" class="text-decoration-none">
-            <img src="../assets/img/Logo_governo.png" alt="Image" height="50">
+            <img src="https://i.postimg.cc/8PCTjwvY/Logo-governo.png" alt="Image" height="50">
 
         </a>
         <a href="index.php?pag=<?php echo $menu4 ?>" type="button" class="btn btn-outline-primary me-2" id="menu4">
@@ -28,3 +28,6 @@
     </div>
 
 </header>
+<?php
+header('Content-Type: text/html; charset=utf-8');
+?>

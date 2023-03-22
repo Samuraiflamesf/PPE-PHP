@@ -1,4 +1,4 @@
-<form action="aniversario/cadastrar.php" method="post">
+<form action="aniversario/cadastrar.php" method="post" accept-charset="utf-8">
     <!-- Nome -->
     <div class="form-group">
         <label for="nome" class="p-2 px-0">

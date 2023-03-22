@@ -1,8 +1,8 @@
-<form action="pasta/cadastrar.php" method="post">
+<form action="pasta/cadastrar.php" method="post" accept-charset="utf-8">
     <!-- Nome -->
     <div class="form-group">
         <label for="nome" class="p-2 px-0">
-            Nome da Opção:
+            Nome da Pasta:
         </label>
         <input type="text" class="form-control" id="nome" name="nome" required>
     </div>
