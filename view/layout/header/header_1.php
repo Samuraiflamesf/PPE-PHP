@@ -18,10 +18,6 @@
     </ul>
 
     <div class="col-md-4 text-end">
-        <a href="/" class="text-decoration-none">
-            <img src="https://i.postimg.cc/8PCTjwvY/Logo-governo.png" alt="Image" height="50">
-
-        </a>
         <a href="index.php?pag=<?php echo $menu4 ?>" type="button" class="btn btn-outline-primary me-2" id="menu4">
             Login
         </a>
