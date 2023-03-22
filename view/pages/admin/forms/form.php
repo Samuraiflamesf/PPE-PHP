@@ -35,6 +35,7 @@ header("Content-type: text/html; charset=utf-8");
                 <?php
                 // Conexão com o banco de dados
                 $conexao = mysqli_connect($servidor, $user, $password, $banco);
+                $conexao-> set_charset("utf8");
                 if (!$conexao) {
                     die("Erro ao conectar ao banco de dados: " . mysqli_connect_error());
                 }

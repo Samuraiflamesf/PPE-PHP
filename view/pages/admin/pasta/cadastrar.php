@@ -4,7 +4,7 @@ require_once("../../../../int/conexao.php");
 // Verificação de envio do formulário
 if (isset($_POST['nome'])) {
     // Preparação da Inserção
-    $sql = "INSERT INTO pasta (nome) VALUES (:nome)";
+    $sql = "INSERT INTO pasta (nome) VALUE (:nome)";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":nome", $_POST['nome']);
 

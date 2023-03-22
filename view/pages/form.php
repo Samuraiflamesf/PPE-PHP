@@ -19,14 +19,22 @@
      </div>
  </div>
  <div class="container">
+
      <?php
         // Conexão com o Banco de Dados
         require_once('../int/conexao.php');
-        // Consultar registros na tabela "pdf_files"
+
+        // Preparação da Busca
         $sql = "SELECT * FROM pasta";
-        $result = $conn->query($sql);
-        
-        while ($row = $result->fetch_assoc()) {
+        $stmt = $pdo->prepare($sql);
+
+        // Execução da Busca
+        $stmt->execute();
+
+        // Resultado
+        $row = $stmt->fetchAll();
+
+        foreach ($row as $row) {
             echo "<div class='h4 shadow-sm p-3 mb-3 mt-5 bg-body rounded'>";
             echo $row["nome"];
             echo "</div>";
@@ -59,9 +67,7 @@
                     echo "</a>";
                     echo "</div>";
                     echo "</div>";
-
-
-                    // Se o contador for divisível por 4, imprime uma quebra de linha
+                    // Se o contador for divisível por 4, imprime uma quebra de linha 
                     if ($count % 3 == 0) {
                         echo "</div>";
                         echo "<div class='row m-auto'>";
@@ -72,7 +78,6 @@
                 echo "Nenhum arquivo PDF encontrado no banco de dados.";
                 echo "</div>";
             }
-
             echo "</div>"; //"<div class='row m-auto'>";
         }
         $conn->close();
