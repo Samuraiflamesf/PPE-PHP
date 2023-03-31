@@ -1,4 +1,4 @@
-<?php
+<?php 
 // Conexão com o Banco de Dados
 require_once('../../../int/conexao.php');
 
