@@ -3,7 +3,7 @@
 require_once('../../../int/conexao.php');
 
 // Preparação da Busca
-$sql = "SELECT id, nome FROM pasta ORDER BY id";
+$sql = "SELECT * FROM pasta ORDER BY id";
 $stmt = $pdo->prepare($sql);
 
 // Execução da Busca
@@ -34,6 +34,7 @@ $registros = $stmt->fetchAll();
                 </tr>
             </thead>
             <tbody>
+
                 <?php foreach ($registros as $registro) { ?>
                     <tr>
 

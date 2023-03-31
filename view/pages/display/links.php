@@ -10,7 +10,7 @@
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) {
         echo "<div class='shadow-sm p-1'>";
-        echo "<a class='text-center w-100 btn btn-outline-dark ' href='" . $row["link"] . "'>";
+        echo "<a class='text-center w-100 btn btn-outline-dark' target='_blank' href='" . $row["link"] . "'>";
         echo $row["nome"];
         echo "</a>";
         echo "</div>";
