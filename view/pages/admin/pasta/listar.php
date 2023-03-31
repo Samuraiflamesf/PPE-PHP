@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Conexão com o Banco de Dados
 require_once('../../../int/conexao.php');
 
@@ -37,7 +37,9 @@ $registros = $stmt->fetchAll();
 
                 <?php foreach ($registros as $registro) { ?>
                     <tr>
-
+                        <td class="drag-handle" data-id="<?php echo $registro['id']; ?>">
+                            <i class="fa fa-bars"></i>
+                        </td>
                         <td>
                             <?php echo $registro['id']; ?>
                         </td>
