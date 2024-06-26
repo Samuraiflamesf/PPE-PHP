@@ -1,7 +1,7 @@
 <footer class="d-flex flex-wrap  flex-column justify-content-center align-items-center py-3 my-4 border-top">
     <div>
         <a class="text-decoration-none">
-            <img src="https://i.postimg.cc/8PCTjwvY/Logo-governo.png" alt="Image" height="60">
+            <img src="https://github.com/Samuraiflamesf/PPE-PHP/blob/main/assets/img/Logo_governo.png?raw=true" alt="Image" height="60">
         </a>
     </div>
     <div class="footer-copyright font-weight-bold text-center text-primary">
