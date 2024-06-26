@@ -1,6 +1,6 @@
 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <a href="/" class=" text-decoration-none col-4">
-        <img src="https://i.postimg.cc/3r1K8zkp/Logo-Cimeb.png" alt="Image" height="50">
+        <img src="https://github.com/Samuraiflamesf/PPE-PHP/blob/main/assets/img/Logo_Cimeb.png?raw=true" alt="Image" height="50">
     </a>
 
 
